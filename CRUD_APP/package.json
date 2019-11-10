@@ -1,0 +1,20 @@
+{
+  "name": "crud_app",
+  "version": "1.0.0",
+  "description": "node and mysql",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "ankesh",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "chalk": "^3.0.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.0.0",
+    "yesql": "^3.2.2"
+  }
+}
