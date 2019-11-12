@@ -9,22 +9,27 @@ const User = function(user){
     this.password = user.password;
 };
 
-User.createUser = (newUser) => {
+User.saveUser = (newUser) => {
     const query = `INSERT INTO users SET ?`;
     return db.query(query, newUser);
 }
 
-User.getUser = () => {
+User.fetchAllUser = () => {
     const query = `SELECT * FROM users`;
     return db.query(query);
 }
 
-User.updateUser = (newUser, id) => {
+User.fetchUserById = (id) => {
+    const query = `SELECT * FROM users WHERE id = ?`;
+    return db.query(query, id);
+};
+
+User.updateUserById = (newUser, id) => {
     const query = `UPDATE users SET ? WHERE id = ?`;
     return db.query(query, [newUser, id]);
 }
 
-User.deleteUser = (id) => {
+User.deleteUserById = (id) => {
     const query = `DELETE FROM users WHERE id = ?`;
     return db.query(query, id);
 }
