@@ -1,0 +1,31 @@
+{
+  "name": "file_uploading",
+  "version": "1.0.0",
+  "description": "file uploading using multer",
+  "main": "app.js",
+  "scripts": {
+    "start:dev": "nodemon server.js",
+    "start:prod": "NODE_ENV=production nodemon server.js",
+    "debug": "ndb server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ankeshnirala/nodejs.git"
+  },
+  "author": "ankesh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ankeshnirala/nodejs/issues"
+  },
+  "homepage": "https://github.com/ankeshnirala/nodejs#readme",
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.0.0"
+  },
+  "devDependencies": {
+    "morgan": "^1.9.1",
+    "ndb": "^1.1.5"
+  }
+}

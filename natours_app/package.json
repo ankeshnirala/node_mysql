@@ -1,0 +1,28 @@
+{
+  "name": "natours_app",
+  "version": "1.0.0",
+  "description": "nodejs and mysql full backend app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nodemon server.js",
+    "start:prod": "NODE_ENV=production nodemon server.js",
+    "debug": "ndb server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ankesh"
+  },
+  "author": "ankesh",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.0.0"
+  },
+  "devDependencies": {
+    "morgan": "^1.9.1",
+    "ndb": "^1.1.5"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "authentication_authorization",
+  "version": "1.0.0",
+  "description": "authentication and authorization",
+  "main": "app.js",
+  "scripts": {
+    "start:dev": "nodemon server.js",
+    "start:prod": "NODE_ENV=production nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ankeshnirala/nodejs.git"
+  },
+  "author": "ankesh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ankeshnirala/nodejs/issues"
+  },
+  "homepage": "https://github.com/ankeshnirala/nodejs#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "chalk": "^3.0.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.9.1",
+    "mysql2": "^2.1.0",
+    "nodemailer": "^6.4.2"
+  }
+}
